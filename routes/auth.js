@@ -8,4 +8,6 @@ router.get("/login",authController.login);
 router.post("/welcome", authController.verifyToken, (req, res) => {
     res.status(200).send("Welcome 🙌 ");
   });
+
+  
  module.exports = router;
